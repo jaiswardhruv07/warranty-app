@@ -1,0 +1,30 @@
+.rocketride/
+# Dependencies
+node_modules/
+
+# Angular
+.angular/
+dist/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+*.log
+
+# Uploaded files
+uploads/
+
+# Build
+build/
+
+# Coverage
+coverage/
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

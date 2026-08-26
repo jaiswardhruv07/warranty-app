@@ -2,7 +2,8 @@ import express from 'express';
 import cors from 'cors';
 
 import pool from './config/database';
-
+import productRoutes from "./routes/product.routes";
+import batchRoutes from './routes/batch.routes';
 const app = express();
 
 app.use(cors());
@@ -29,5 +30,9 @@ app.get('/api/health', async (_req, res) => {
     });
   }
 });
-
+/*
+ * Product routes
+ */
+app.use('/api/products', productRoutes)
 export default app;
+app.use('/api/batches', batchRoutes);
